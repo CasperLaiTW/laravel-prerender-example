@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7b56bfb5d21eaae286e532c3ed2f8941",
+    "content-hash": "96c425d3507d7eb783b7ff09ee7a1e1e",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -109,6 +109,59 @@
                 }
             ],
             "time": "2020-08-18T23:57:15+00:00"
+        },
+        {
+            "name": "codebar-ag/laravel-prerender",
+            "version": "v3.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/codebar-ag/Laravel-Prerender.git",
+                "reference": "d293d479bad2e54e735a93abe3b38d7ece900d61"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/codebar-ag/Laravel-Prerender/zipball/d293d479bad2e54e735a93abe3b38d7ece900d61",
+                "reference": "d293d479bad2e54e735a93abe3b38d7ece900d61",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^7.0",
+                "illuminate/support": "^8.0",
+                "php": ">=7.3",
+                "symfony/psr-http-message-bridge": "^1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "CodebarAg\\LaravelPrerender\\LaravelPrerenderServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "CodebarAg\\LaravelPrerender\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "codebar AG",
+                    "email": "hi@codebar.ch"
+                }
+            ],
+            "description": "Laravel middleware for prerendering javascript-rendered pages on the fly for SEO",
+            "keywords": [
+                "laravel",
+                "prerender"
+            ],
+            "time": "2020-09-13T22:58:20+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -3928,6 +3981,71 @@
                 }
             ],
             "time": "2020-07-23T08:36:24+00:00"
+        },
+        {
+            "name": "symfony/psr-http-message-bridge",
+            "version": "v1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/psr-http-message-bridge.git",
+                "reference": "9d3e80d54d9ae747ad573cad796e8e247df7b796"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/psr-http-message-bridge/zipball/9d3e80d54d9ae747ad573cad796e8e247df7b796",
+                "reference": "9d3e80d54d9ae747ad573cad796e8e247df7b796",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1",
+                "psr/http-message": "^1.0",
+                "symfony/http-foundation": "^4.4 || ^5.0"
+            },
+            "require-dev": {
+                "nyholm/psr7": "^1.1",
+                "symfony/phpunit-bridge": "^4.4 || ^5.0",
+                "zendframework/zend-diactoros": "^1.4.1 || ^2.0"
+            },
+            "suggest": {
+                "nyholm/psr7": "For a super lightweight PSR-7/17 implementation"
+            },
+            "type": "symfony-bridge",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Bridge\\PsrHttpMessage\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                }
+            ],
+            "description": "PSR HTTP message bridge",
+            "homepage": "http://symfony.com",
+            "keywords": [
+                "http",
+                "http-message",
+                "psr-17",
+                "psr-7"
+            ],
+            "time": "2019-11-25T19:33:50+00:00"
         },
         {
             "name": "symfony/routing",
